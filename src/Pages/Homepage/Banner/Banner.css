@@ -1,0 +1,134 @@
+h1 {
+    font-size: 9vmin;
+    color: #8bf;
+    text-align: left;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 2rem;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+
+    0%,
+    98% {
+        content: "";
+    }
+
+    5%,
+    95% {
+        content: "W";
+    }
+
+    10%,
+    92% {
+        content: "We";
+    }
+
+    15%,
+    89% {
+        content: "Web";
+    }
+
+
+    20%,
+    86% {
+        content: "Web D";
+    }
+
+    25%,
+    83% {
+        content: "Web De";
+    }
+
+    30%,
+    80% {
+        content: "Web Dev";
+    }
+
+    35%,
+    77% {
+        content: "Web Deve";
+    }
+
+    40%,
+    74% {
+        content: "Web Devel";
+    }
+
+    45%,
+    71% {
+        content: "Web Develo";
+    }
+
+    50%,
+    68% {
+        content: "Web Develop";
+    }
+
+    55%,
+    65% {
+        content: "Web Develope";
+    }
+
+    60%,
+    62% {
+        content: "Web Developer";
+    }
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.typewriter {
+    --caret: currentcolor;
+}
+
+.typewriter::before {
+    content: "";
+    animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+    border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+    border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+    .typewriter::after {
+        animation: none;
+    }
+
+    @keyframes sequencePopup {
+
+        0%,
+        100% {
+            content: "web developer";
+        }
+
+    }
+
+    .typewriter::before {
+        content: "web developer";
+        animation: sequencePopup 12s linear infinite;
+    }
+}
