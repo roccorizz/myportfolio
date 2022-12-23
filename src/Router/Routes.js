@@ -7,8 +7,8 @@ import Contact from '../Pages/Homepage/Contact/Contact';
 import Services from '../Pages/Homepage/Services/Services';
 import About from '../Pages/Homepage/About/About';
 import Wheelanes from '../Pages/Homepage/Projects/Wheelanes/Wheelanes';
-import RestMedia from '../Pages/Homepage/Projects/RestMedia/RestMedia';
 import PLearning from '../Pages/Homepage/Projects/PLearning/PLearning';
+import PropertyHomieRocco from './../Pages/Homepage/Projects/PropertyHomieRocco/PropertyHomieRocco';
 const router = createBrowserRouter([
     {
         path: '/',
@@ -46,8 +46,8 @@ const router = createBrowserRouter([
                 element: <Wheelanes></Wheelanes>
             },
             {
-                path: '/restmedia',
-                element: <RestMedia></RestMedia>
+                path: '/propertyhomierocco',
+                element: <PropertyHomieRocco></PropertyHomieRocco>
             },
             {
                 path: '/plearning',
