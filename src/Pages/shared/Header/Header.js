@@ -3,7 +3,7 @@ import { Document } from 'react-pdf'
 import { Link } from 'react-router-dom';
 const Header = () => {
     return (
-        <div className="navbar bg-neutral text-neutral-content">
+        <div className="navbar bg-slate-800  text-neutral-content">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -25,12 +25,12 @@ const Header = () => {
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal header-menu px-1">
-                    <li ><Link to='/' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-orange-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Home</Link></li>
-                    <li><Link to='/services' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-orange-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Services</Link></li>
-                    <li><Link to='/resume' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-orange-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Resume</Link></li>
-                    <li><Link to='/projects' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-orange-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">My Projects</Link></li>
-                    <li><Link to='/about' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-orange-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">About Me</Link></li>
-                    <li><Link to='/contact' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-orange-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Contact Me</Link></li>
+                    <li ><Link to='/' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-blue-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Home</Link></li>
+                    <li><Link to='/services' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-blue-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Services</Link></li>
+                    <li><Link to='/resume' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-blue-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Resume</Link></li>
+                    <li><Link to='/projects' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-blue-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">My Projects</Link></li>
+                    <li><Link to='/about' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-blue-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">About Me</Link></li>
+                    <li><Link to='/contact' className="m-2 p-2 text-white rounded-xl transition-all duration-300 bg-gradient-to-br to-blue-400 via-black from-slate-500 bg-size-200 hover:bg-right-bottom">Contact Me</Link></li>
                 </ul>
             </div>
             <div className="navbar-end">

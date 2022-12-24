@@ -80,13 +80,13 @@ const Projects = () => {
         <div>
 
             <hr /><h1 className='py-5 text-5xl text-white font-bold text-center'>My Projects</h1><hr />
-            <div className="hero  bg-slate-800 my-5">
+            <div className="hero min-h-screen bg-slate-800 my-5">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className={styles.container}>
                         <div className={styles.container__inner}>
                             {transitions((springs, item) => (
                                 <animated.div className={styles.img__container} style={springs}>
-                                    <img src={IMAGES[item]} />
+                                    <img src={IMAGES[item]} alt='' />
                                 </animated.div>
                             ))}
                             <div className={styles.ticker}>
@@ -120,7 +120,7 @@ const Projects = () => {
                         <div className={styles.container__inner}>
                             {transitions((springs, item) => (
                                 <animated.div className={styles.img__container} style={springs}>
-                                    <img src={IMAGES2[item]} />
+                                    <img src={IMAGES2[item]} alt='' />
                                 </animated.div>
                             ))}
                             <div className={styles.ticker}>
@@ -153,7 +153,7 @@ const Projects = () => {
                         <div className={styles.container__inner}>
                             {transitions((springs, item) => (
                                 <animated.div className={styles.img__container} style={springs}>
-                                    <img src={IMAGES3[item]} />
+                                    <img src={IMAGES3[item]} alt='' />
                                 </animated.div>
                             ))}
                             <div className={styles.ticker}>
